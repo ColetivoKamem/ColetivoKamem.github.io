@@ -28,13 +28,10 @@ function sendMain() {
     return false;
 }
 
-function notAvaliable() {
-    var encrypted = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
-    var decrypted = CryptoJS.AES.decrypt(encrypted, "Secret Passphrase");
-    
+function notAvaliable() { 
     swal({
         title: "Espere um pouco...",
         text: "O serviço de cursos ainda não esta disponível.",
         type: "error"
-    })
+    });
 }
